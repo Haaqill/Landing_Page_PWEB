@@ -63,8 +63,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  --bs-link-color: #0d6efd;
+  --bs-link-hover-color: #0d6efd;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -591,6 +591,12 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.uniform-img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -3637,7 +3643,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.5rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-color: #ffc107;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -10897,13 +10903,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #ffc107;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #ffc107;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10925,11 +10931,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #ffc107;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #ffc107;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -10989,7 +10995,7 @@ html {
   }
 }
 .portfolio .portfolio-item {
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   display: block;
   max-width: 25rem;
@@ -11000,9 +11006,9 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 188, 156, 0.9); */
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
